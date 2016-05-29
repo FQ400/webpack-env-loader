@@ -15,13 +15,13 @@ module.exports = function (content) {
   md = sandbox.module.exports;
 
   try {
-    app = this.options.loader.appSettings.name || 'app';
+    app = this.options.module.loader.appSettings.name || 'app';
   } catch (e) {
     app = 'app';
   }
 
   try {
-    env = this.options.loader.appSettings.env || 'development';
+    env = this.options.module.loader.appSettings.env || 'development';
   } catch (e) {
     env = 'development';
   }
